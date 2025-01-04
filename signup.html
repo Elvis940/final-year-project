@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/form-validation.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - StudyHub</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1><a href="index.html">StudyHub</a></h1>
+        </div>
+    </header>
+
+    <!-- Signup Form Section -->
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <p>Join StudyHub and start your learning journey today!</p>
+        <form action="/signup" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Log in here</a>.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StudyHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

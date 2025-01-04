@@ -18,7 +18,7 @@
     <div class="login-container">
         <h2>Welcome Back!</h2>
         <p>Log in to access your StudyHub account.</p>
-        <form action="/login" method="POST">
+        <form id="login-form" action="/login" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -34,7 +34,10 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 StudyHub. All rights reserved.</p>
+        <p>&copy; 2025 StudyHub. All rights reserved.</p>
     </footer>
+
+    <!-- Link the login-validation.js file -->
+    <script src="js/login-validation.js"></script>
 </body>
 </html>
